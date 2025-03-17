@@ -1,0 +1,103 @@
+/* Styling Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Judul */
+h1 {
+  font-size: 2.5rem;
+  color: #4a4e69;
+  margin-bottom: 20px;
+}
+
+/* Tombol Level */
+.level-buttons {
+  margin-bottom: 10px;
+}
+
+.level-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  background-color: #4a4e69;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0.7;
+}
+
+.level-buttons button:hover {
+  background-color: #22223b;
+}
+
+/* Highlight tombol level */
+.level-buttons .active {
+  background-color: #22223b;
+  opacity: 1;
+}
+
+/* Notifikasi Pilihan Level */
+.notification {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #4a4e69;
+  height: 20px;
+}
+
+/* Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid #b2bec3;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cell:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status Game */
+.status {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Tombol Restart */
+#resetButton {
+  margin-top: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #4a4e69;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+  background-color: #22223b;
+}

@@ -1,0 +1,5 @@
+shooter-game/
+│
+├── index.html      (File utama HTML)
+├── styles.css      (File untuk CSS)
+└── script.js       (File JavaScript untuk logika permainan)

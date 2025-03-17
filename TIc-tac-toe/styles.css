@@ -1,0 +1,99 @@
+/* Styling global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Judul */
+h1 {
+  font-size: 2.5rem;
+  color: #4a4e69;
+  margin-bottom: 20px;
+}
+
+/* Styling papan permainan */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 10px;
+  padding: 20px;
+  background-color: #dfe6e9;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling kotak */
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 3px solid #b2bec3;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2d3436;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #dfe6e9;
+}
+
+/* Styling status (info game) */
+.status {
+  font-size: 1.5rem;
+  color: #4a4e69;
+  margin: 20px;
+}
+
+/* Tombol restart */
+button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #4a4e69;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #22223b;
+  transform: translateY(-2px);
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 500px) {
+  .board {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+  }
+
+  .cell {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .status {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
